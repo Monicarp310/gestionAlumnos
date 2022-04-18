@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 import { BrowserModule } from '@angular/platform-browser';
-import { AltaAlumnoComponent } from './altaAlumno/alta-alumno/alta-alumno.component';
 import { AppComponent } from './app.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
+import { AlumnoModule } from './features/alumno.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AltaAlumnoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +20,7 @@ import {MatSelectModule} from '@angular/material/select';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatSelectModule,
-
+    AlumnoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
