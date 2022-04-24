@@ -12,10 +12,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { AltaAlumnoComponent } from './components/alta-alumno/alta-alumno/altaAlumnos/alta-alumno.component';
-import { listaAlumnoComponent } from './components/alta-alumno/alta-alumno/listaAlumnos/listaAlumno';
 
 @NgModule({
-  declarations: [listaAlumnoComponent, AltaAlumnoComponent],
+  declarations: [AltaAlumnoComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -31,6 +30,6 @@ import { listaAlumnoComponent } from './components/alta-alumno/alta-alumno/lista
     MatDialogModule
 
   ],
-  exports: [listaAlumnoComponent, AltaAlumnoComponent],
+  exports: [AltaAlumnoComponent],
 })
 export class AlumnoModule {}

@@ -36,7 +36,7 @@ export class AltaAlumnoComponent implements OnInit {
 
   getErrorMessage() {
     if (this.name.hasError('required')) {
-      return 'Introduce un nombre';
+      return 'Introduce tu nombre';
     }
 
     if (this.surname1.hasError('required')) {
